@@ -144,7 +144,7 @@ export default function AboutPage() {
             >
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Founded in 2020, Nexora emerged from a simple belief: that technology should
+                Founded in 2024, Nexora emerged from a simple belief: that technology should
                 empower, not complicate. Our journey began with a small team of dedicated
                 professionals who shared a vision of creating digital solutions that truly
                 make a difference.
@@ -209,7 +209,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card border border-border p-8 rounded-xl hover:border-primary/50 transition-all"
+                className="bg-card border border-gray-200 dark:border-gray-800 p-8 rounded-xl hover:border-primary/50 transition-all"
               >
                 <div className="text-5xl mb-4">
                   {/* <FontAwesomeIcon icon={value.icon} /> */}
@@ -248,7 +248,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative"
               >
-                <div className="bg-card border border-border p-8 rounded-xl hover:border-primary/50 transition-all h-full">
+                <div className="bg-card border border-gray-200 dark:border-gray-800 p-8 rounded-xl hover:border-primary/50 transition-all h-full">
                   <div className="text-6xl font-bold text-primary/20 mb-4">
                     {item.step}
                   </div>
@@ -285,7 +285,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/50 transition-all"
+                className="bg-card border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden hover:border-primary/50 transition-all"
               >
                 <div className="bg-gradient-to-br from-primary/20 to-interactive/20 h-48 flex items-center justify-center">
                   <div className="text-6xl text-primary">
@@ -333,7 +333,7 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-border">
+      <footer className="py-12 border-t border-gray-200 dark:border-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -369,7 +369,7 @@ export default function AboutPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-border pt-8 text-center text-muted-foreground">
+          <div className="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-muted-foreground">
             <p>&copy; 2025 Nexora. All rights reserved.</p>
           </div>
         </div>

@@ -239,7 +239,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -8 }}
-                className="bg-card border border-border p-8 rounded-xl hover:border-primary/50 transition-all group"
+                className="bg-card border border-gray-200 dark:border-gray-800 p-8 rounded-xl hover:border-primary/50 transition-all group"
               >
                 <div className="text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">
                   {/* <FontAwesomeIcon icon={service.icon} /> */}
@@ -280,7 +280,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-border">
+      <footer className="py-12 border-t border-gray-200 dark:border-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -316,7 +316,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-border pt-8 text-center text-muted-foreground">
+          <div className="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-muted-foreground">
             <p>&copy; 2025 Nexora. All rights reserved.</p>
           </div>
         </div>

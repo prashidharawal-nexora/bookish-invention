@@ -16,11 +16,12 @@
     "fortawesome": "^0.0.1-security",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.552.0",
-    "next": "16.0.1",
+    "next": "14.2.14",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "safe-stable-stringify": "^2.5.0",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
