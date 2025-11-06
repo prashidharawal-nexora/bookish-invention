@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/#services" },
+    { name: "Service", href: "/#services" },
     { name: "About", href: "/about" },
     { name: "Our Team", href: "/about#team" },
   ];
@@ -20,10 +20,10 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-white/10"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#0d0d0d]/95 backdrop-blur-md border border-white/10 rounded-full mx-4 lg:mx-20 mt-4"
     >
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+      <div className="px-6 lg:px-12">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <motion.div
@@ -37,15 +37,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-5">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm lg:text-base text-foreground/80 hover:text-foreground transition-colors relative group"
+                className="text-[14px] font-medium text-[#f4f6f8] hover:text-primary transition-colors font-['Poppins']"
               >
                 {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
           </div>
@@ -56,7 +55,7 @@ export default function Navbar() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-primary hover:bg-interactive text-white px-6 py-2.5 rounded-lg font-medium transition-colors"
+                className="bg-white text-[#1f1f1f] px-6 py-2 rounded-full text-[14px] font-semibold hover:bg-white/90 transition-colors font-['Poppins']"
               >
                 Contact us
               </motion.button>
