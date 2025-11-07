@@ -12,14 +12,14 @@ import Footer from "@/components/sections/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0d0d0d]">
-      { <Navbar />
+      <Navbar />
       <HeroSection />
-      <WhyNexoraSection />}
+      <WhyNexoraSection />
       <ProcessSection />
       <ServicesSection />
-      {<WorkSection />
+      <WorkSection />
       <CTASection />
-      <Footer /> }
+      <Footer /> 
     </div>
   );
 }
